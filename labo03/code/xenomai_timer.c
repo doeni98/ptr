@@ -2,16 +2,23 @@
 #include <native/task.h>
 #include <native/timer.h>
 
+#define PERIOD 1000
 
+RTIME starttime;
 
 void task_func(void *arg){
+    /* set priod */
+    rt_task_set_periodic(NULL, 0, PERIOD);
+    while(){
 
-    
+    }
+
 }
 
 
 int main(void){
     RT_TASK mytask;
+    starttime = rt_timer_read();
 
     if(mlockall(MCL_CURRENT|MCL_FUTURE)){
         rt_printf("mlockall failed\n");
@@ -22,6 +29,7 @@ int main(void){
         rt_printf("spawn failed\n");
         exit(1);
     }
+
 
     while(1);
 
