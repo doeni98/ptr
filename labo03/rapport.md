@@ -28,3 +28,6 @@
 ## Priorité des threads et Linux
 Sans dohell on arrive à une vitesse de boucle de 445'000'000 cycles par secondes. Avec le dohell par contre on est pratiquement à la moitié. (200'000'000 cycles par secondes)
 
+### Mesure d'une tache périodique avec nanosleep
+
+Une tache à haute prio faisant une boucle qui attend 100ms à chaque itération arrive env **50 à 100 microsecondes**  en retard à chaque itération.
