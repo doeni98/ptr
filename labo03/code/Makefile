@@ -8,3 +8,4 @@ LDFLAGS=$(shell $(XENOCONFIG) --skin=native --ldflags)
 all:: xenomai_timer
 clean::
 	rm -f xenomai_timer *.o
+ex01:: ex01
