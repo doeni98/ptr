@@ -80,7 +80,7 @@ int main(void){
 
 ### Xenomai
 
-Une tâche à haute prio qui se reveille périodiquement après 100ms arrive **10 microsecondes en retard ou en avance sur un processeur qui est sur 100% avec xenomai.
+Une tâche à haute prio qui se reveille périodiquement après 100ms arrive **10 microsecondes** en retard ou en avance sur un processeur qui est chargé à 100% et avec xenomai.
 On voit qu'on arrive à etre plus précis en utilisant xenomai qu'un sleep normale.
 
 ```C
